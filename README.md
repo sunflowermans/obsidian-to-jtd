@@ -17,26 +17,19 @@ Requires Node 20 or newer.
 
 ## Install
 
-This package depends on `kramdown-gfm-anchors`. Publish that library first, then:
+This package depends on `kramdown-gfm-anchors`.
 
 ```bash
 npm install
 ```
 
-Run the converter from this repository with either name:
-
-```bash
-npx obsidian-to-jtd notes.md -o notes-jtd.md
-npx obsidian_to_jtd notes.md -o notes-jtd.md
-```
-
 ## Use
 
 ```bash
-obsidian-to-jtd notes.md -o notes-jtd.md
-obsidian-to-jtd notes.md --in-place
-obsidian-to-jtd --root ./vault notes.md
-obsidian-to-jtd < notes.md > notes-jtd.md
+npx obsidian-to-jtd notes.md -o notes-jtd.md
+npx obsidian-to-jtd notes.md --in-place
+npx obsidian-to-jtd --root ./vault notes.md
+npx obsidian-to-jtd < notes.md > notes-jtd.md
 ```
 
 `--root` is a directory of other notes. A link such as `[[Guide#Intro]]` reads `Guide.md` there, when it exists, so a repeated heading gets the same `-1` or `-2` suffix kramdown would assign. Without a readable note, the fragment is still generated from the heading text.
