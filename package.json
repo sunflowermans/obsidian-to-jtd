@@ -1,0 +1,25 @@
+{
+  "name": "obsidian-to-jtd",
+  "version": "0.1.0",
+  "description": "Rewrite Obsidian wiki links into Markdown links for Just the Docs.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "obsidian-to-jtd": "./bin/obsidian-to-jtd.js",
+    "obsidian_to_jtd": "./bin/obsidian-to-jtd.js"
+  },
+  "exports": "./src/convert.js",
+  "files": [
+    "src",
+    "bin"
+  ],
+  "scripts": {
+    "test": "node --test test/*.js"
+  },
+  "dependencies": {
+    "kramdown-gfm-anchors": "^0.1.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
