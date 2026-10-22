@@ -30,12 +30,6 @@ npx obsidian-to-jtd notes.md -o notes-jtd.md
 npx obsidian_to_jtd notes.md -o notes-jtd.md
 ```
 
-To try it against a local checkout of the library before that package is on npm:
-
-```bash
-npm install ../kramdown-gfm-anchors
-```
-
 ## Use
 
 ```bash
